@@ -128,7 +128,7 @@ $menuPermisos = $contenido->Permisos();
 
                 }
             });//fin ajax
-        })
+        });
     });
 </script>
 
