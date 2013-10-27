@@ -1,0 +1,71 @@
+
+.tabla_registros{
+    margin: 0 auto;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse:separate;
+}
+
+.tabla_registros thead th{
+    padding:10px;
+    color:#FFFFFF;
+    text-shadow:1px 1px 1px #568F23;
+    border:1px solid #93CE37;
+    border-bottom:3px solid #9ED929;
+    background-color:#9DD929;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(123,192,67)),
+        color-stop(0.51, rgb(139,198,66)),
+        color-stop(0.87, rgb(158,217,41))
+        );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(187,133,19) 2%,
+        rgb(192,192,192) 51%,
+        rgb(187,133,19) 87%
+        );
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius:5px 5px 0px 0px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    width: 122px;
+}
+
+.tabla_registros thead td:empty{
+    background:transparent;
+    border:none;
+}
+
+.tabla_registros tbody td{
+    padding:10px;
+    text-align:center;
+    background-color:#EBEBE0;
+    border: 2px solid #E7EFE0;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+    width: 122px;
+}
+
+.tabla_registros  tfoot td{
+    
+    color: #9CD009;
+    font-size:16px;
+    text-align:center;
+    padding:2px 0px;
+   
+}
+
+.tabla_registros  tfoot td{
+    color:#666;
+}
+
