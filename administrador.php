@@ -48,7 +48,7 @@ $menuPermisos = $contenido->Permisos();
         $("#permisos").click(function() {
             $("#formualario").slideUp();
             $("#frmpermisos").fadeIn(1000);
-        })
+        });
 
         $("#user").blur(function() {
             var user = $(this).val();
@@ -112,7 +112,7 @@ $menuPermisos = $contenido->Permisos();
             $('input[name="permisos[]"]:checked').each(function() {
                 datos += (datos == '') ? '' : '/';
                 datos += $(this).val();
-            })
+            });
 
 
             $.ajax({
