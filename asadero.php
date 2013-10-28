@@ -33,7 +33,7 @@ $operacion = new Operacion();
                     $("#fecha").fadeIn();
                     $("#muestra_pro, #seleccion_pro").fadeIn();
                     $("#datosAjax").empty();
-                    texto = "<thead><tr><th>Fecha</th><th>Tipo</th><th>Entrada</th><th>Salida</th></tr></thead>";
+                    texto = "<thead><tr><th>Fecha</th><th>Tipo</th><th>Entrada</th><th>Salida</th><th>Acciones</th></tr></thead>";
                     $("#datosAjax").append(texto);
                     $("#Tentrada").attr("checked", false);
                     $.each(data, function(i, val) {
@@ -49,7 +49,7 @@ $operacion = new Operacion();
                         } else {
                             Salida = 0;
                         }
-                        contenido = "<tbody><tr><td>" + val.fecha + "</td><td>" + val.descripcion + "</td><td>" + Entrada + "</td><td style='color: red;'>" + Salida + "</td><td><input type='button' value='borrar'  onclick = 'borrar("+val.id+")'></td></tr></tbody>"
+                        contenido = "<tbody><tr><td>" + val.fecha + "</td><td>" + val.descripcion + "</td><td>" + Entrada + "</td><td style='color: red;'>" + Salida + "</td><td><a href = '' onclick = 'borrar("+val.id+")' ><img src = 'images/borrar.png' style = 'border:none;'></a>&nbsp;&nbsp;&nbsp;<a href = '' onclick = 'borrar("+val.id+")' ><img src = 'images/actualizar.png' style = 'border:none;'></a></td></tr></tbody>"  
                         $("#datosAjax").append(contenido);
                     });
                     contenido = "<tfoot><tr><td></td></tr><tr><td>Neto</td><td></td><td>" + acumEntrada + "</td><td>" + acumSalida + "</td></tr><tr><td></td><tr></tfoot>";
@@ -84,7 +84,7 @@ $operacion = new Operacion();
                     $("#fecha").fadeIn();
                     $("#muestra_pro, #seleccion_pro").fadeIn();
                     $("#datosAjax").empty();
-                    texto = "<thead><tr><th>Fecha</th><th>Tipo</th><th>Entrada</th><th>Salida</th></tr></thead>";
+                    texto = "<thead><tr><th>Fecha</th><th>Tipo</th><th>Entrada</th><th>Salida</th><th>Acciones</th></tr></thead>";
                     $("#datosAjax").append(texto);
                     $("#Tentrada").attr("checked", false);
                     $.each(data, function(i, val) {
@@ -100,7 +100,7 @@ $operacion = new Operacion();
                         } else {
                             Salida = 0;
                         }
-                        contenido = "<tbody><tr><td>" + val.fecha + "</td><td>" + val.descripcion + "</td><td>" + Entrada + "</td><td style='color: red;'>" + Salida + "</td></tr></tbody>"
+                        contenido = "<tbody><tr><td>" + val.fecha + "</td><td>" + val.descripcion + "</td><td>" + Entrada + "</td><td style='color: red;'>" + Salida + "</td><td><a href = '' onclick = 'borrar("+val.id+")' ><img src = 'images/borrar.png' style = 'border:none;'></a>&nbsp;&nbsp;&nbsp;<a href = '' onclick = 'borrar("+val.id+")' ><img src = 'images/actualizar.png' style = 'border:none;'></a></td></tr></tbody>"
                         $("#datosAjax").append(contenido);
                     });
                     contenido = "<tfoot><tr><td></td></tr><tr><td>Neto</td><td></td><td>" + acumEntrada + "</td><td>" + acumSalida + "</td></tr><tr><td></td><tr></tfoot>";
@@ -136,7 +136,7 @@ $operacion = new Operacion();
                                 dataType: 'JSON',
                                 success: function(data) {
                                     $("#datosAjax").empty();
-                                    texto = "<thead><tr><th>Fecha</th><th>Tipo</th><th>Entrada</th><th>Salida</th></tr></thead>";
+                                    texto = "<thead><tr><th>Fecha</th><th>Tipo</th><th>Entrada</th><th>Salida</th><th>Acciones</th></tr></thead>";
                                     $("#datosAjax").append(texto);
                                     $("#Tentrada").attr("checked", false);
                                     $.each(data, function(i, val) {
@@ -153,7 +153,7 @@ $operacion = new Operacion();
                                         } else {
                                             Salida = 0;
                                         }
-                                        contenido = "<tbody><tr><td>" + val.fecha + "</td><td>" + val.descripcion + "</td><td>" + parseInt(Entrada) + "</td><td style='color: red;'>" + parseInt(Salida) + "</td></tr></tbody>"
+                                        contenido = "<tbody><tr><td>" + val.fecha + "</td><td>" + val.descripcion + "</td><td>" + parseInt(Entrada) + "</td><td style='color: red;'>" + parseInt(Salida) + "</td><td><a href = '#' onclick = 'borrar("+val.id+")' ><img src = 'images/borrar.png' style = 'border:none;'></a>&nbsp;&nbsp;&nbsp;<a href = '#' onclick = 'borrar("+val.id+")' ><img src = 'images/actualizar.png' style = 'border:none;'></a></td></tr></tbody>"
                                         $("#datosAjax").append(contenido);
                                     });
                                     contenido = "<tfoot><tr><td><hr></td></tr><tr><td>Neto</td><td></td><td>" + parseInt(acumEntrada) + "</td><td>" + parseInt(acumSalida) + "</td></tr><tr><td></td><tr></tfoot>";
@@ -201,7 +201,7 @@ $operacion = new Operacion();
                                 dataType: 'JSON',
                                 success: function(data) {
                                     $("#datosAjax").empty();
-                                    texto = "<thead><tr><th>Fecha</th><th>Tipo</th><th>Entrada</th><th>Salida</th></tr></thead>";
+                                    texto = "<thead><tr><th>Fecha</th><th>Tipo</th><th>Entrada</th><th>Salida</th><th>Acciones</th></tr></thead>";
                                     $("#datosAjax").append(texto);
                                     $("#Tentrada").attr("checked", false);
                                     $.each(data, function(i, val) {
@@ -218,7 +218,7 @@ $operacion = new Operacion();
                                         } else {
                                             Salida = 0;
                                         }
-                                        contenido = "<tbody><tr><td>" + val.fecha + "</td><td>" + val.descripcion + "</td><td>" + parseInt(Entrada) + "</td><td style='color: red;'>" + parseInt(Salida) + "</td></tr></tbody>"
+                                        contenido = "<tbody><tr><td>" + val.fecha + "</td><td>" + val.descripcion + "</td><td>" + parseInt(Entrada) + "</td><td style='color: red;'>" + parseInt(Salida) + "</td><td><a href = '#' onclick = 'borrar("+val.id+")' ><img src = 'images/borrar.png' style = 'border:none;'></a>&nbsp;&nbsp;&nbsp;<a href = '#' onclick = 'borrar("+val.id+")' ><img src = 'images/actualizar.png' style = 'border:none;'></a></td></tr></tbody>"
                                         $("#datosAjax").append(contenido);
                                     });
                                     contenido = "<tfoot><tr><td></td></tr><tr><td>Neto</td><td></td><td>" + parseInt(acumEntrada) + "</td><td>" + parseInt(acumSalida) + "</td></tr><tr><td></td><tr></tfoot>";
@@ -246,7 +246,7 @@ $operacion = new Operacion();
 </script>
 <script type="text/javascript">
 function borrar(id){
-    alert($("#"+id).text());
+    alert('borrar');
 //    $("#"+id).detach();
 }
 </script>
@@ -273,7 +273,7 @@ function borrar(id){
                     </select>
                 </td>
             </tr>
-
+            
         </table>
     </form>
 </div>
@@ -364,6 +364,7 @@ function borrar(id){
                     <th>Entrada</th>
                     <th>Salida</th>
                     <th>Total</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
         </table>

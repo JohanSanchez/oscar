@@ -1,6 +1,6 @@
 .html
 {
-    background: #7F7F7F url("../images/fondo_interior.jpg") no-repeat fixed center;
+    background:url("../images/index.jpg") no-repeat fixed center;
     background-size: cover !important;
 }
 

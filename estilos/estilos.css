@@ -1,5 +1,5 @@
 .html{
-    background: #7F7F7F url("../images/fondo_interior.png") no-repeat fixed center;
+    background:url("../images/fondo_interior.png") no-repeat fixed center;
     background-size: cover !important;
 }
 
