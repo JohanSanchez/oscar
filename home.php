@@ -21,6 +21,7 @@ $datos = $operacion->ObtenerRegistros();
         <link rel="stylesheet" type="text/css" href='estilos/estilos.css'>
         <link rel="stylesheet" type="text/css" href='estilos/menu.css'>
         <link rel="stylesheet" type="text/css" href='estilos/estilo_secciones.css'>
+        <link rel="stylesheet" type="text/css" href='estilos/estilo_admin.css'>
         <script>
             $(function() {
 

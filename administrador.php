@@ -3,7 +3,6 @@ require_once 'clases/Operacion.class.php';
 require_once 'clases/Contenido.class.php';
 $operacion = new Operacion();
 $contenido = new Contenido();
-
 $menuPermisos = $contenido->Permisos();
 ?>
 
@@ -131,6 +130,15 @@ $menuPermisos = $contenido->Permisos();
         });
     });
 </script>
+
+
+
+
+
+
+
+
+
 
 <div class='cuerpo1'>
     <div id='formualario'>

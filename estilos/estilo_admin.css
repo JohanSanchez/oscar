@@ -1,0 +1,52 @@
+#campo_principal_usuario_admin{
+    width:915px;
+    border: 1px solid #000000;
+}
+
+#sub_campo_principal_usuario_left{
+    width: 49.75%;
+    float: left;
+    border: 1px solid #000;
+}
+#sub_campo_principal_usuario_interno{
+    width: 100%;
+}
+
+#sub_campo_principal_usuario_interno h3{
+    margin: 1% 26%;
+}
+
+.sub_campo_principal_usuario_interno_input{
+    border:none;
+    border-radius:3px;
+    box-shadow: 3px 3px 20px #000;
+    height:25px;
+    margin: 10px 25%;
+    width: 50%;   
+}
+
+.sub_campo_principal_usuario_interno_boton{
+    border:none;
+    border-radius:4px;
+    background: #ff9900;
+    box-shadow: 3px 3px 20px #000;
+    cursor: pointer;
+    height:25px;
+    margin: 10px 35%;
+    width: 30%; 
+}
+
+.sub_campo_principal_usuario_interno_respuesta{
+    text-align: center;
+}
+#sub_campo_principal_usuario_rigth{
+    width: 49.75%;
+    float: right;
+    border: 1px solid #000;
+}
+
+#campo_principal_permisos_admin{
+    width:915px;
+    border: 1px solid #000000;
+}
+
